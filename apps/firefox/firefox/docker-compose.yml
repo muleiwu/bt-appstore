@@ -11,6 +11,7 @@ services:
       - KEEP_APP_RUNNING=1
       - ENABLE_CJK_FONT=${INSTALL_FONT}
       - VNC_PASSWORD=${VNC_PASSWORD}
+      - PACKAGES_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/alpine
     volumes:
       - ${APP_PATH}/data/config:/config:rw
     shm_size: 2g
